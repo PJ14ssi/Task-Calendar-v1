@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;600;700&family=Work+Sans&display=swap');
+* {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F2F2F2;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.calendar-header {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.calendar-table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar-table th,
+.calendar-table td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #CCCCCC;
+  width: calc(100% / 7);
+}
+
+
+.calendar-table .date {
+  font-weight: 600;
+}
+
+.date {
+  font-weight: 600;
+  text-align: center;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.task-name {
+  flex: 1;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #777777;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.checked .checkbox {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+}
+
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-left: 10px;
+  align-self: center;
+}
+
+
+.easy {
+  background-color: #b8d8ff;
+}
+
+.medium {
+  background-color: #d8b8ff;
+}
+
+.hard {
+  background-color: #ffb8b8;
+}
+
+/* ... */
+
+.add-task-button {
+  background-color: #D5BA8A;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.clear-tasks-button {
+  background-color: #b8e6b8;
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.completed {
+  background-color: green;
+}
